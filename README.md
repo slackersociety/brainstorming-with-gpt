@@ -33,6 +33,14 @@ offers a comprehensive and intuitive way to localize neurological disorders. The
 potential to revolutionize the field of neurology and improve the lives of countless patients
 around the world.
 
+Functionality of ChatBox is shown in the figure below
+<img width="415" alt="Chatbox UI" src="https://user-images.githubusercontent.com/50146522/227884693-f9ab5ba5-6866-4a11-8bf4-002b9023f3ac.png">
+
+A small demo of this interaction is also shown below.
+![chatbox](https://user-images.githubusercontent.com/50146522/227887238-19ace0a6-b88f-4a02-aff6-7caed2950dfa.gif)
+
+
+
 ## Usage 
 
 - The Brain Chat dashboard can be used by doctors and medical professionals to assist them in diagnosing and treating patients with various neurological disorders. The chatbot component of the dashboard powered by GPT3 model 'curie' and the input directory containing a large corpus of text on neuroanatomy, can provide information on which parts of the brain may be affected based on the symptoms provided by the user. This feature can help doctors to quickly and accurately diagnose patients and provide appropriate treatment.
