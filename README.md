@@ -84,6 +84,7 @@ It rightly pointed out the problem is in pons (region of the brain) and we got t
   this [link](https://drive.google.com/file/d/1QGl1k3Xb-LZNSHXXf51pPUasTjpGM4dF/view?usp=share_link) and save under
   the `dashboard_src` directory
 - Edit the `credentials_template.json` file to add your open ai auth key, rename it to credentials.json.
+- Verify that your project directory looks like [this]()
 - Great work, you're all seet up and ready to run the app.
 - Execute the following commands in a bash terminal:
   
