@@ -79,7 +79,7 @@ It correctly pointed out the problem is in pons (region of the brain) and we got
 - Navigate to the directory of the repository on the local machine.
 - Ensure all the necessary packages are installed:
 
-  `conda env create -f env.yml`
+  `conda env create -f env.yaml`
 - Create a folder named `meshes` in the root directory and add the human brain object files by extracting them from
   this [link](https://gin.g-node.org/BrainGlobe/atlases/src/master/allen_human_500um_v0.1.tar.gz
   )
@@ -88,11 +88,12 @@ It correctly pointed out the problem is in pons (region of the brain) and we got
   the `dashboard_src` directory
 - Edit the `credentials_template.json` file to add your open ai auth key, rename it to `credentials.json`.
 - Verify that your project directory looks like [this]()
-- Great work, you're all seet up and ready to run the app.
-- Execute the following commands in a bash terminal:
+- Great work, you're all set up and ready to run the app.
+- Execute the following commands in a bash terminal from the root directory:
   
 ```
 cd dashboard_src
+conda activate brainatlas
 python3 app.py
 
 ```
