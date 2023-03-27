@@ -52,7 +52,7 @@ plot_layout = {
 }
 
 # API Key
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'INSERT-API-KEY-HERE'
 
 index = GPTSimpleVectorIndex.load_from_disk('index.json')
 # Model response
