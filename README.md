@@ -42,6 +42,16 @@ A small demo of this interaction is also shown below.
 
 ![chatbox](https://user-images.githubusercontent.com/50146522/227887238-19ace0a6-b88f-4a02-aff6-7caed2950dfa.gif)
 
+In another case, we had the following conversation:
+```
+Question: A patient has Left facial droop, right arm and leg weakness. What are the possible localizations in the brain?
+Answer: The possible localizations in the brain are lesions of the corticobulbar (face) and corticospinal (arm and leg) pathways originating in the right motor cortex. The lesion must be at or above the level of the pons, since the facial nerve (CN VII) nucleus is in the pons and exits the brainstem at the pontomedullary junction
+```
+It rightly pointed out the problem is in pons (region of the brain) and we got the output visualized in that region as well as seen from the animation below. 
+
+``
+![demo](https://user-images.githubusercontent.com/50146522/227901205-29b70bc6-8641-44cc-8e67-e706982dcb22.gif)
+
 ## Usage
 
 - The Brain Chat dashboard can be used by doctors and medical professionals to assist them in diagnosing and treating
