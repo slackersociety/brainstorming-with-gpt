@@ -2,8 +2,9 @@ import pathlib
 import numpy as np
 import plotly.graph_objects as go
 import os
+import pandas as pd
 
-folder_path = "meshes"
+folder_path = "../meshes"
 
 # default_colorscale = [
 #     [0, "rgb(12,51,131)"],
@@ -12,6 +13,14 @@ folder_path = "meshes"
 #     [0.75, "rgb(242,143,56)"],
 #     [1, "rgb(217,30,30)"],
 # ]
+brain_df = pd.read_csv("../data/naming_brain.csv")
+
+
+def fname_to_brain_part_mapper(fname, brain_df):
+    fname = int(fname.split('.')[0])
+    part_name = brain_df.query("id == @fname")['name'].values[0]
+
+    return part_name
 
 
 def read_mniobj(fpath):
@@ -94,17 +103,22 @@ def create_plot_edges_lines(vertices, faces):
         Ye += [T[k % 3][1] for k in range(4)] + [None]
         Ze += [T[k % 3][2] for k in range(4)] + [None]
 
+
 def create_fig(fname, cmap=False):
     vertices, faces = read_mniobj(fname)
+    brain_part = fname_to_brain_part_mapper(fname, brain_df)
+
     data = []
 
     outer_mesh = plotly_triangular_mesh(vertices, faces)[0]
+
+    outer_mesh['hovertext'] = brain_part
     if cmap:
         outer_mesh["colorscale"] = "Reds"
         outer_mesh["opacity"] = 0.9
 
     else:
-        outer_mesh['colorscale'] = "teal"
+        outer_mesh['colorscale'] = "Greys"
         outer_mesh["opacity"] = 0.1
 
     data.append(outer_mesh)
