@@ -1,1 +1,78 @@
-# brainstorming-with-gpt
+# Brainstorming with GPT
+A Brain Diagnosis Assistant Tool
+
+## Authors
+
+-   Waiel, Tanmay, Ashwin, Julie, Jaskirat
+
+## Overview 
+
+Brain Chat is a dashboard that combines two main components: a chatbot and a 3D plot. The
+chatbot is powered by the GPT3 model 'curie' and an input directory containing a large corpus of
+text on neuroanatomy. The chatbot serves as an assistant to doctors, allowing them to input
+symptoms and receive information on which parts of the brain may be affected. This feature
+provides doctors with a powerful tool to diagnose and treat patients with neurological disorders.
+The 3D plot is another key component of the dashboard. It allows the user to locate the parts of
+the brain that are affected based on the symptoms provided by the user (doctor) and view the
+cross section of the brain pertaining to the problem. This provides them with a visual
+representation of the affected areas and helps them better understand the location of the lesion.
+The 3D plot is interactive, allowing one to zoom in and out of different areas of the brain for a
+more detailed view.
+The dashboard is built using Dash Plotly in Python, a powerful web application framework for
+building analytical web applications. This framework provides an intuitive interface for building
+interactive dashboards and allows for seamless integration with a wide range of tools and
+libraries.
+The project has a wide range of potential applications in the medical field. It can be used to assist
+doctors in diagnosing and treating patients with a variety of neurological disorders, including
+stroke, traumatic brain injury, demyelinating diseases and neurodegenerative conditions. The
+ability to locate affected areas of the brain in a visual format can also be useful in surgical
+planning and rehabilitation.
+Overall, the dashboard represents an innovative and powerful tool for doctors and medical
+professionals. By combining the power of GPT3 with an interactive 3D plot, the dashboard
+offers a comprehensive and intuitive way to localize neurological disorders. The project has the
+potential to revolutionize the field of neurology and improve the lives of countless patients
+around the world.
+
+## Usage 
+
+- The Brain Chat dashboard can be used by doctors and medical professionals to assist them in diagnosing and treating patients with various neurological disorders. The chatbot component of the dashboard powered by GPT3 model 'curie' and the input directory containing a large corpus of text on neuroanatomy, can provide information on which parts of the brain may be affected based on the symptoms provided by the user. This feature can help doctors to quickly and accurately diagnose patients and provide appropriate treatment.
+
+- The 3D plot component of the dashboard can be used to locate the affected areas of the brain and view the cross section of the brain pertaining to the problem. The interactive feature of the 3D plot allows doctors to zoom in and out of different areas of the brain for a more detailed view. This visual representation of the affected areas can be useful in surgical planning and rehabilitation.
+
+- Overall, the Brain Chat dashboard can be a valuable tool for medical professionals in the diagnosis and treatment of neurological disorders. It has the potential to revolutionize the field of neurology and improve the lives of countless patients around the world.
+
+<br>
+
+ *To run the app locally:* 
+
+- Navigate to the directory of the repository on the local machine.
+- Ensure all the necessary packages are installed:
+
+    `pip3 install -r requirements.txt`
+
+- Execute the following command in a bash terminal:
+
+    `python3 app.py`
+
+*To propose new changes:* 
+- Fork the repository
+- Make your changes to the code and adhere to best coding practices. 
+- Commit your changes (with an informative commit message).
+- Push your changes to your fork - Submit a pull request.
+
+**Places for improvement** 
+- Train the model on more neuro books in order to improve the model for a specialized domain.
+- Improve the layout to have more professional looking Dashboard.
+
+
+## License 
+
+`brainstorming-with-gpt` was created using Dash visualization by our group members. It is licensed under the terms of the [MIT license](LICENSE).
+
+## References
+
+- [Brain 3D plot](https://brainglobe.info/)
+- [Chat GPT models](https://openai.com/blog/introducing-chatgpt-and-whisper-apis) 
+- [Dataset](https://gin.g-node.org/BrainGlobe/atlases/src/master/allen_human_500um_v0.1.tar.gz) 
+- [PLotly](https://plotly.com/dash/)
+- [BG Atlas API](https://github.com/brainglobe/bg-atlasapi)
