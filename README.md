@@ -52,8 +52,8 @@ nerve (CN VII) nucleus is in the pons and exits the brainstem at the pontomedull
 
 It correctly pointed out the problem is in pons (region of the brain) and we got the output visualized in that region as well as seen from the animation below. That's so cool
 
+![demo](https://user-images.githubusercontent.com/50146522/227905962-f75b25a1-789c-4621-80d9-cc3464a4994e.gif)
 
-![demo](https://user-images.githubusercontent.com/50146522/227901205-29b70bc6-8641-44cc-8e67-e706982dcb22.gif)
 
 ## Usage
 
