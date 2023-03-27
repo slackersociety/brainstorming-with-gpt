@@ -80,9 +80,7 @@ It correctly pointed out the problem is in pons (region of the brain) and we got
 - Ensure all the necessary packages are installed:
 
   `conda env create -f env.yaml`
-- Create a folder named `meshes` in the root directory and add the human brain object files by extracting them from
-  this [link](https://gin.g-node.org/BrainGlobe/atlases/src/master/allen_human_500um_v0.1.tar.gz
-  )
+- Download and extract the file from this [link](https://gin.g-node.org/BrainGlobe/atlases/src/master/allen_human_500um_v0.1.tar.gz). Copy the `meshes` folder from the downloaded file and paste it into the root directory of the project
 - Download the model named as `index.json` from
   this [link](https://drive.google.com/file/d/1QGl1k3Xb-LZNSHXXf51pPUasTjpGM4dF/view?usp=share_link) and save under
   the `dashboard_src` directory
