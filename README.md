@@ -35,9 +35,11 @@ potential to revolutionize the field of neurology and improve the lives of count
 around the world.
 
 Functionality of ChatBox is shown in the figure below
+
 <img width="415" alt="Chatbox UI" src="https://user-images.githubusercontent.com/50146522/227884693-f9ab5ba5-6866-4a11-8bf4-002b9023f3ac.png">
 
 A small demo of this interaction is also shown below.
+
 ![chatbox](https://user-images.githubusercontent.com/50146522/227887238-19ace0a6-b88f-4a02-aff6-7caed2950dfa.gif)
 
 ## Usage
