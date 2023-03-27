@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/treemap.js"></script>
+        <script src="https://code.highcharts.com/modules/treegraph.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    </head>
+    <body>
+        
+        <figure class="highcharts-figure">
+            <div id="container" style="height: 100%;"></div>
+        </figure>
+        <script>
+            tree_data = [
+                ["","brain","0"],
+["brain","forebrain (prosencephalon)","1"],
+["forebrain (prosencephalon)","gray matter of forebrain","2"],
+["gray matter of forebrain","diencephalon","3"],
+["diencephalon","hypothalamus","4"],
+["diencephalon","subthalamus","4"],
+["subthalamus","subthalamic nucleus","5"],
+["diencephalon","thalamus","4"],
+["gray matter of forebrain","telencephalon","3"],
+["telencephalon","cerebral nuclei","4"],
+["cerebral nuclei","amygdaloid complex","5"],
+["cerebral nuclei","basal forebrain","5"],
+["cerebral nuclei","basal nuclei (basal ganglia)","5"],
+["basal nuclei (basal ganglia)","globus pallidus","6"],
+["globus pallidus","external segment of globus pallidus","7"],
+["globus pallidus","internal segment of globus pallidus","7"],
+["basal nuclei (basal ganglia)","striatum","6"],
+["striatum","caudate nucleus","7"],
+["caudate nucleus","body of caudate","8"],
+["caudate nucleus","head of caudate","8"],
+["caudate nucleus","tail of caudate","8"],
+["striatum","nucleus accumbens","7"],
+["striatum","putamen","7"],
+["cerebral nuclei","claustrum","5"],
+["cerebral nuclei","extended amygdala","5"],
+["extended amygdala","bed nucleus of stria terminalis","6"],
+["telencephalon","cerebral cortex","4"],
+["cerebral cortex","allocortex","5"],
+["allocortex","paleocortex (semicortex)","6"],
+["paleocortex (semicortex)","anterior olfactory nucleus","7"],
+["paleocortex (semicortex)","olfactory bulb","7"],
+["paleocortex (semicortex)","piriform cortex","7"],
+["cerebral cortex","periallocortex","5"],
+["periallocortex","peripaleocortex","6"],
+["peripaleocortex","frontal agranular insular cortex (area FI)","7"],
+["peripaleocortex","temporal agranular insular cortex (area TI)","7"],
+["forebrain (prosencephalon)","surface structures of forebrain","2"],
+["surface structures of forebrain","cerebral gyri and lobules","3"],
+["cerebral gyri and lobules","frontal lobe","4"],
+["frontal lobe","anterior intermediate orbital gyrus","5"],
+["frontal lobe","frontomarginal gyrus","5"],
+["frontal lobe","frontal pole","5"],
+["frontal lobe","frontal operculum","5"],
+["frontal lobe","inferior frontal gyrus","5"],
+["inferior frontal gyrus","inferior frontal gyrus, opercular part","6"],
+["inferior frontal gyrus","inferior frontal gyrus, triangular part","6"],
+["frontal lobe","lateral olfactory gyrus","5"],
+["frontal lobe","lateral orbital gyrus","5"],
+["frontal lobe","middle frontal gyrus","5"],
+["frontal lobe","medial orbital gyrus","5"],
+["frontal lobe","paracentral lobule, rostral part","5"],
+["frontal lobe","posterior intermediate orbital gyrus","5"],
+["frontal lobe","paracingulate gyrus","5"],
+["frontal lobe","precentral gyrus","5"],
+["frontal lobe","gyrus rectus (straight gyrus)","5"],
+["frontal lobe","rostral gyrus","5"],
+["frontal lobe","superior frontal gyrus","5"],
+["cerebral gyri and lobules","insular lobe","4"],
+["insular lobe","long insular gyri","5"],
+["insular lobe","short insular gyri","5"],
+["cerebral gyri and lobules","limbic lobe","4"],
+["limbic lobe","cingulate gyrus","5"],
+["cingulate gyrus","cingulate gyrus, caudal (posterior) part","6"],
+["cingulate gyrus","cingulate gyrus, rostral (anterior) part","6"],
+["limbic lobe","hippocampal gyrus (formation)","5"],
+["hippocampal gyrus (formation)","body of hippocampus","6"],
+["hippocampal gyrus (formation)","head of hippocampus","6"],
+["hippocampal gyrus (formation)","tail of hippocampus","6"],
+["limbic lobe","cingulo-parahippocampal isthmus","5"],
+["limbic lobe","parahippocampal gyrus","5"],
+["parahippocampal gyrus","anterior parahippocampal gyrus","6"],
+["parahippocampal gyrus","posterior parahippocampal gyrus","6"],
+["parahippocampal gyrus","uncus of parahippocampal gyrus","6"],
+["uncus of parahippocampal gyrus","ambiens gyrus","7"],
+["limbic lobe","subcallosal gyrus (parolfactory gyrus)","5"],
+["cerebral gyri and lobules","occipital lobe","4"],
+["occipital lobe","cuneus","5"],
+["occipital lobe","occipitotemporal (fusiform) gyrus, occipital part","5"],
+["occipital lobe","inferior occipital gyrus","5"],
+["occipital lobe","lingual gyrus","5"],
+["occipital lobe","occipital pole","5"],
+["occipital lobe","superior occipital gyrus","5"],
+["cerebral gyri and lobules","parietal lobe","4"],
+["parietal lobe","inferior parietal lobule","5"],
+["inferior parietal lobule","angular gyrus","6"],
+["inferior parietal lobule","supramarginal gyrus","6"],
+["parietal lobe","paracentral lobule, caudal part","5"],
+["parietal lobe","parietal operculum","5"],
+["parietal lobe","postcentral gyrus","5"],
+["parietal lobe","precuneus","5"],
+["parietal lobe","supraparietal lobule","5"],
+["cerebral gyri and lobules","temporal lobe","4"],
+["temporal lobe","occipitotemporal (fusiform) gyrus, temporal part","5"],
+["temporal lobe","inferior temporal gyrus","5"],
+["temporal lobe","middle temporal gyrus","5"],
+["temporal lobe","planum polare","5"],
+["temporal lobe","planum temporale","5"],
+["temporal lobe","superior temporal gyrus","5"],
+["temporal lobe","temporal pole","5"],
+["temporal lobe","transverse temporal gyrus (Heschl's gyrus)","5"],
+["surface structures of forebrain","limen insula","3"],
+["forebrain (prosencephalon)","ventricles of forebrain","2"],
+["ventricles of forebrain","third ventricle","3"],
+["ventricles of forebrain","lateral ventricles","3"],
+["lateral ventricles","anterior horn of lateral ventricle","4"],
+["lateral ventricles","body of lateral ventricle","4"],
+["lateral ventricles","inferior horn of lateral ventricle","4"],
+["lateral ventricles","posterior horn of lateral ventricle","4"],
+["lateral ventricles","atrium of lateral ventricle","4"],
+["forebrain (prosencephalon)","white matter of forebrain","2"],
+["brain","hindbrain (rhombencephalon)","1"],
+["hindbrain (rhombencephalon)","gray matter of the hindbrain","2"],
+["gray matter of the hindbrain","metencephalon","3"],
+["metencephalon","cerebellum","4"],
+["cerebellum","cerebellar cortex","5"],
+["cerebellar cortex","cerebellar hemisphere","6"],
+["cerebellar hemisphere","lateral hemisphere of cerebellum","7"],
+["cerebellar hemisphere","paravermis of cerebellum","7"],
+["cerebellar cortex","cerebellar vermis","6"],
+["cerebellum","cerebellar deep nuclei","5"],
+["metencephalon","pons","4"],
+["pons","basilar part of pons","5"],
+["pons","pontine tegmentum","5"],
+["gray matter of the hindbrain","myelencephalon (medulla oblongata)","3"],
+["myelencephalon (medulla oblongata)","pyramidal part of medulla oblongata","4"],
+["myelencephalon (medulla oblongata)","tegmentum of medulla oblongata","4"],
+["hindbrain (rhombencephalon)","ventricles of hindbrain","2"],
+["ventricles of hindbrain","fourth ventricle","3"],
+["ventricles of hindbrain","central canal of medulla oblongata","3"],
+["hindbrain (rhombencephalon)","white matter of hindbrain","2"],
+["brain","midbrain (mesencephalon)","1"],
+["midbrain (mesencephalon)","gray matter of midbrain","2"],
+["gray matter of midbrain","midbrain tectum","3"],
+["midbrain tectum","inferior colliculus","4"],
+["midbrain tectum","superior colliculus","4"],
+["gray matter of midbrain","midbrain tegmentum","3"],
+["gray matter of midbrain","pretectal region","3"],
+["midbrain (mesencephalon)","ventricle of midbrain","2"],
+["ventricle of midbrain","cerebral aqueduct","3"],
+["midbrain (mesencephalon)","white matter of midbrain","2"],
+["white matter of midbrain","cerebral peduncle (crus cerebri)","3"],
+["white matter of midbrain","superior cerebellar peduncle (brachium conjunctivum)","3"]
+            ];
+
+chart_var = {
+    chart: {
+        spacingBottom: 30,
+        marginRight: 120
+    },
+    credits: {
+        enabled: false
+    },
+    title: {
+        text: 'Brain tree'
+    },
+    series: [
+        {
+            type: 'treegraph',
+            keys: ['parent', 'id', 'level', 'color'],
+            clip: false,
+            data: tree_data,
+            marker: {
+                symbol: '',
+                radius: 6,
+                fillColor: '#ffffff',
+                lineWidth: 3
+            },
+            dataLabels: {
+            		enabled:true,
+                align: 'left',
+                pointFormat: '{point.id}',
+                style: {
+                    color: '#000000',
+                    textOutline: '3px #ffffff',
+                    whiteSpace: 'nowrap'
+                },
+                x: 24,
+                crop: false,
+                overflow: 'none'
+            },
+            levels: [
+                {
+                    level: 1,
+                    levelIsConstant: false
+                },
+                {
+                    level: 2,
+                    colorByPoint: true
+                },
+                {
+                    level: 3,
+                    colorVariation: {
+                        key: 'brightness',
+                        to: -0.5
+                    }
+                },
+                {
+                    level: 4,
+                    colorVariation: {
+                        key: 'brightness',
+                        to: 0.5
+                    }
+                },
+                {
+                    level: 6,
+                    dataLabels: {
+                        x: 10
+                    },
+                    marker: {
+                        radius: 4
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+            
+
+
+    
+        var selection =  window.location.search.substr(1);
+        var new_data = tree_data;
+        for (i in new_data){
+            if (new_data[i][1] == selection){
+                new_data[i][3] = 'red';
+                var level = new_data[i][2];
+            }
+            else{
+                new_data[i][3] = '';
+            }
+        }
+        filter_data = []
+        for (i in new_data){
+            if (new_data[i][2] <level || new_data[i][1]==selection){
+                filter_data.push(new_data[i])
+            }
+        }
+        chart_var.series[0]['data'] = filter_data;
+        Highcharts.chart('container', chart_var);
+
+        </script>
+    </body>
+</html>
+
