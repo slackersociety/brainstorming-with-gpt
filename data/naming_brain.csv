@@ -1,0 +1,145 @@
+acronym,id,name
+root,10153,neural plate
+NT,10154,neural tube
+Br,10155,brain
+F,10156,forebrain (prosencephalon)
+FGM,10157,gray matter of forebrain
+Tel,10158,telencephalon
+Cx,10159,cerebral cortex
+PACx,10313,periallocortex
+PPCx,10327,peripaleocortex
+FI,10329,frontal agranular insular cortex (area FI)
+TI,10330,temporal agranular insular cortex (area TI)
+ACx,10292,allocortex
+PalCx,10306,paleocortex (semicortex)
+OB,10307,olfactory bulb
+AON,10308,anterior olfactory nucleus
+Pir,10311,piriform cortex
+CN,10331,cerebral nuclei
+AMY,10361,amygdaloid complex
+EXA,10383,extended amygdala
+BNST,10384,bed nucleus of stria terminalis
+BN,10332,basal nuclei (basal ganglia)
+STR,10333,striatum
+Ca,10334,caudate nucleus
+CaH,10335,head of caudate
+CaB,10336,body of caudate
+CaT,10337,tail of caudate
+Pu,10338,putamen
+NAC,10339,nucleus accumbens
+GP,10342,globus pallidus
+GPe,10343,external segment of globus pallidus
+GPi,10344,internal segment of globus pallidus
+Cla,10346,claustrum
+BF,10349,basal forebrain
+Die,10389,diencephalon
+THM,10390,thalamus
+SubTH,10465,subthalamus
+STH,10466,subthalamic nucleus
+HTH,10467,hypothalamus
+FWM,10557,white matter of forebrain
+FV,10595,ventricles of forebrain
+LV,10596,lateral ventricles
+aLV,10597,anterior horn of lateral ventricle
+bLV,10598,body of lateral ventricle
+xLV,266441657,atrium of lateral ventricle
+pLV,10599,posterior horn of lateral ventricle
+iLV,10600,inferior horn of lateral ventricle
+3V,10602,third ventricle
+FSS,10609,surface structures of forebrain
+CeG,12112,cerebral gyri and lobules
+FroL,12113,frontal lobe
+PrCG,12114,precentral gyrus
+SFG,12115,superior frontal gyrus
+MFG,12116,middle frontal gyrus
+IFG,12117,inferior frontal gyrus
+IFGtr,12118,"inferior frontal gyrus, triangular part"
+IFGop,12119,"inferior frontal gyrus, opercular part"
+ReG,12121,gyrus rectus (straight gyrus)
+MOrG,12122,medial orbital gyrus
+AOrG,12123,anterior intermediate orbital gyrus
+POrG,12124,posterior intermediate orbital gyrus
+LOrG,12125,lateral orbital gyrus
+PCLr,12126,"paracentral lobule, rostral part"
+PaCG,146034872,paracingulate gyrus
+FrO,12127,frontal operculum
+RoG,146034876,rostral gyrus
+LOG,13229,lateral olfactory gyrus
+FMG,146034884,frontomarginal gyrus
+FP,146034888,frontal pole
+ParL,12131,parietal lobe
+PoCG,12132,postcentral gyrus
+SPL,12133,supraparietal lobule
+IPL,12134,inferior parietal lobule
+SMG,12135,supramarginal gyrus
+AnG,12136,angular gyrus
+PrCun,12137,precuneus
+PCLc,12138,"paracentral lobule, caudal part"
+PaO,13230,parietal operculum
+TemL,12139,temporal lobe
+STG,12140,superior temporal gyrus
+MTG,12141,middle temporal gyrus
+ITG,12142,inferior temporal gyrus
+FuGt,12143,"occipitotemporal (fusiform) gyrus, temporal part"
+TTG,12144,transverse temporal gyrus (Heschl's gyrus)
+PLT,12145,planum temporale
+TP,12146,temporal pole
+PLP,12147,planum polare
+OccL,12148,occipital lobe
+OP,12149,occipital pole
+Cun,12150,cuneus
+LiG,12151,lingual gyrus
+FuGo,12152,"occipitotemporal (fusiform) gyrus, occipital part"
+IOG,12153,inferior occipital gyrus
+SOG,12154,superior occipital gyrus
+InL,12176,insular lobe
+LIG,12177,long insular gyri
+SIG,12178,short insular gyri
+LimL,12155,limbic lobe
+CgG,12156,cingulate gyrus
+CgGr,12157,"cingulate gyrus, rostral (anterior) part"
+CgGc,12158,"cingulate gyrus, caudal (posterior) part"
+IsCPH,12159,cingulo-parahippocampal isthmus
+SCG,12160,subcallosal gyrus (parolfactory gyrus)
+PHG,12162,parahippocampal gyrus
+APH,12163,anterior parahippocampal gyrus
+PPH,12164,posterior parahippocampal gyrus
+UN,12165,uncus of parahippocampal gyrus
+AG,12166,ambiens gyrus
+HiF,12170,hippocampal gyrus (formation)
+HiH,12171,head of hippocampus
+HiB,12173,body of hippocampus
+HiT,12174,tail of hippocampus
+LI,12179,limen insula
+M,10648,midbrain (mesencephalon)
+MGM,10649,gray matter of midbrain
+PTR,12181,pretectal region
+MTg,12195,midbrain tegmentum
+MTc,12291,midbrain tectum
+SC,12292,superior colliculus
+IC,12305,inferior colliculus
+MWM,10650,white matter of midbrain
+cpd,12330,cerebral peduncle (crus cerebri)
+scp,12354,superior cerebellar peduncle (brachium conjunctivum)
+MV,10651,ventricle of midbrain
+Aq,12369,cerebral aqueduct
+H,10653,hindbrain (rhombencephalon)
+HGM,10654,gray matter of the hindbrain
+Met,10655,metencephalon
+CB,10656,cerebellum
+CBC,10657,cerebellar cortex
+CBV,10658,cerebellar vermis
+CBH,10659,cerebellar hemisphere
+CBPV,12384,paravermis of cerebellum
+CBL,12390,lateral hemisphere of cerebellum
+CbDN,10660,cerebellar deep nuclei
+Pn,10661,pons
+PnBa,12405,basilar part of pons
+PnTg,12416,pontine tegmentum
+Mo,10662,myelencephalon (medulla oblongata)
+MoPy,12535,pyramidal part of medulla oblongata
+MoTg,12538,tegmentum of medulla oblongata
+HWM,10668,white matter of hindbrain
+HV,10669,ventricles of hindbrain
+4V,12805,fourth ventricle
+cec,12826,central canal of medulla oblongata
