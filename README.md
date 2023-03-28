@@ -115,7 +115,7 @@ the [MIT license](LICENSE).
 
 ## References
 
-- [Brain 3D plot](https://brainglobe.info/)
+- [Brain 3D plot](https://dash.gallery/dash-brain-viewer/)
 - [Chat GPT models](https://openai.com/blog/introducing-chatgpt-and-whisper-apis)
 - [Dataset](https://gin.g-node.org/BrainGlobe/atlases/src/master/allen_human_500um_v0.1.tar.gz)
 - [PLotly](https://plotly.com/dash/)
