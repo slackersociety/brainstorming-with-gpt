@@ -85,7 +85,10 @@ It correctly pointed out the problem is in pons (region of the brain) and we got
   this [link](https://drive.google.com/file/d/1QGl1k3Xb-LZNSHXXf51pPUasTjpGM4dF/view?usp=share_link) and save under
   the `dashboard_src` directory
 - Edit the `credentials_template.json` file to add your open ai auth key, rename it to `credentials.json`.
-- Verify that your project directory looks like this ![ Example Project Directory](/img/example_directory.png "Text to show on mouseover")
+- Verify that your project directory looks like this 
+
+![image](https://user-images.githubusercontent.com/50146522/228749789-8dd25316-f7da-44b6-88ee-02199e7603c3.png)
+
 - Great work, you're all set up and ready to run the app.
 - Execute the following commands in a bash terminal from the root directory:
   
@@ -108,7 +111,8 @@ python3 app.py
 - Train the model on more neuro books in order to improve the model for a specialized domain.
 - Improve the layout to have more professional looking Dashboard.
 
-## License
+## License!
+
 
 `brainstorming-with-gpt` was created using Dash visualization by our group members. It is licensed under the terms of
 the [MIT license](LICENSE).
